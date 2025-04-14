@@ -190,22 +190,22 @@ def safe_catch(
     Can be used in various ways:
     
     - simple decorator:
-       @safe_catch_history
+       @safe_catch
        def my_function():
            ...
     
     - parameterized decorator:
-       @safe_catch_history(message="Custom message")
+       @safe_catch(message="Custom message")
        def my_function():
            ...
     
     - class decorator:
-       @safe_catch_history(message="Error in class")
+       @safe_catch(message="Error in class")
        class MyClass:
            ...
     
     -  context manager:
-       with safe_catch_history(message="Custom message") as catcher:
+       with safe_catch(message="Custom message") as catcher:
            # code that might raise exceptions            
            ...
        exceptions = catcher.get_exceptions()
