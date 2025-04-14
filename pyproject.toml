@@ -1,0 +1,7 @@
+[project]
+name = "descriptors"
+version = "0.1.0"
+description = "descriptors for module import and error handling"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
